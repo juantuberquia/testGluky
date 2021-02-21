@@ -1,10 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
+import CreateContent from "./CreateContent";
+import Imgs from "./Imgs";
 
-// cuando cmabie tambien este estado, hacer la peticion gecth a la api de oiaxa bay random de letras y pintarlas o
-// mapearlas
+const Pixabay = ({ data }) => {
+  const [create, setCreate] = useState(false);
 
-const Pixabay = () => {
-  return <div> </div>;
+  const handleClick = () => {
+    setCreate(true);
+  };
+
+  return (
+    <div>
+      <div className="content mx-auto mt-3 card">
+        {create ? <CreateContent /> : null}
+        {data.map((photo) => (
+          <Imgs
+            id={photo.id}
+            url={photo.largeImageURL}
+            text={photo.tags}
+            likes={photo.likes}
+          />
+        ))}
+        <button onClick={handleClick} className="fixed">
+          Crear
+        </button>
+      </div>
+    </div>
+  );
 };
 
 export default Pixabay;

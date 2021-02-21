@@ -1,0 +1,12 @@
+.content {
+  width: 500px;
+  height: 400px;
+  overflow-x: hidden;
+}
+
+.fixed {
+  position: fixed;
+  top: 58%;
+  left: 62%;
+  height: 2rem;
+}
