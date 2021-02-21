@@ -1,3 +1,20 @@
+# Test Gluky
+
+## ✍🏻 Description
+This app was built in React.js, the aim  is some consuming API for teh login, the show content about images, text, in others.
+
+You can see the result here → [ Test Gluky ]  https://test-gluky.netlify.app/
+
+## Technologies
+1. HTML
+2. CSS -> Boostrap
+3. React.js -> hooks
+4. API Pixabay
+5. API login Google
+
+# se recomienda abrir la aplicacion en un navegador incognito, para evitar conflictos con los cookies
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
