@@ -46,7 +46,7 @@ const CreateContent = () => {
     <div>
       {error ? <Error message="Ingresar Busqueda" /> : null}
       <form onSubmit={handleSubmit} className="text-center">
-        <label className="mr-2 mt-3"> Descripcion: </label>
+        <label className="mr-2 mt-4"> Descripcion: </label>
         <input
           type="text"
           placeholder="Ingrese Contenido"
@@ -54,7 +54,11 @@ const CreateContent = () => {
           name="text"
           value={information.text}
         />
-        <input type="submit" className="ml-3 mb-3" />
+        <input
+          type="submit"
+          className="ml-3 mb-3 btn btn-outline-success"
+          value="Publicar"
+        />
         {stateContent ? <ShowContent data={historyContent} /> : null}
       </form>
     </div>

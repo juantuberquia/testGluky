@@ -21,12 +21,14 @@ const Pixabay = ({ data }) => {
             likes={photo.likes}
           />
         ))}
-        <button onClick={handleClick} className="fixed">
+        <button onClick={handleClick} className="fixed btn btn-outline-primary">
           Crear
         </button>
       </div>
     </div>
   );
 };
+
+// btn btn-primary btn-lg
 
 export default Pixabay;
