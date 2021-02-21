@@ -1,7 +1,7 @@
 # Test Gluky
 
 ## ✍🏻 Description
-This app was built in React.js, the aim  is some consuming API for teh login, the show content about images, text, in others.
+This app was built in React.js, the aim  is some consuming API for login, the show content about images, text, in others.
 
 You can see the result here → [ Test Gluky ]  https://test-gluky.netlify.app/
 
@@ -13,6 +13,15 @@ You can see the result here → [ Test Gluky ]  https://test-gluky.netlify.app/
 5. API login Google
 
 # se recomienda abrir la aplicacion en un navegador incognito, para evitar conflictos con los cookies
+
+## Componentes
+
+1. Form: en el componente form encontrara el logueo, consumiendo la API de google, si dicha validacion es correcta carga el componente Pixabay y realiza una peticion Get a la API de Pixabay en el archivo APP.
+2. Pixabay: luego de realizar la peticion GET, en el componente Pixabay se mapea el array de objetos con toda la informacion solicitada a la API, en el que se muestran imagenes relacionadas y sus respectivos me gustas.
+3. Imgs:  es el componente mapeado, al que se recibe como props la : URL de la img, texto sobre la imagen y los me gustas.
+4. CreateContent: en dicho componente se postea o se realiza una publicacion, que consta de un texto y su respectivo me gusta.
+5. ShowContent: se muestra la informacion pertinente a la publicacion, en el que se mapea la informacion diligenciada, a traves del componente Imgs.
+6.  Error: dicho componente es el encargado de manejar los errores, en el componente CreateContent
 
 
 # Getting Started with Create React App
